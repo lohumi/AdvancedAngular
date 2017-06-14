@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="charDetailCtrl">
+<head>
+<style>
+	table{
+		border-collapse: collapse;
+		width:100%;
+		padding-top: 10px;
+	}
+	th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr{background-color: #f2f2f2}
+th {
+    background-color: #4CAF50;
+    color: white;}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+<h1 style="text-align: center;">Character's details</h1>
+<div class="container" >
+	  <table >
+		  <tr>
+		  <th> Name</th>
+		    <th>Aliases</th> 
+		    <th>Gender</th>
+		    <th>Played By</th>
+		    <th>Died</th>
+		    
+		  </tr>
+		  <tr >
+		  <td> 
+		  {{name}}
+		  </td>
+		  <td> {{aliases}}</td>
+		    <td>{{gender}}</td> 
+		    <td>{{playedBy}}</td>
+		    <td>{{died}}</td>
+		   
+		  </tr>
+		</table>
+	  </div>
+
+ <script type="text/javascript" src="../controller/controller.js">
+ </script>
+ 
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html lang="en" ng-app="myApp" ng-controller="myCtrl">
+</html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<h1 style="text-align:center;"> List of books</h1>
+<div class="container" >
+	  <div class="panel-group">
+	    <div class="panel panel-default" >
+	      <div class="panel-heading" style="background-color:#6abfa4">Books</div>
+	      
+		<ul class="list-group">
+		  <li class="list-group-item" ng-repeat="b in books | filter:searchText">
+		  <a ng-href="views/Character-view.html?book={{b.url}}" title="checkout Character's list">{{b.name}}</a>
+		  </li>
+		 
+		</ul>
+	    </div>
+	    
+  	  </div>
+</div>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="../controller/controller.js"></script>
+</body>
+</html>
